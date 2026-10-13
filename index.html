@@ -1,365 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Abhishek sable, portfolio, Abhishek, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
-    <meta name="description" content="Welcome to Abhishek's Portfolio. Full-Stack Web Developer and Android App Developer" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <title>Portfolio</title>
-    
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTDER8P9VJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbfbfc">
+  <title>Abhishek Shukla — Full Stack Developer</title>
+  <meta name="description" content="Abhishek Shukla is a full stack developer in Noida, India, building mobile and web products end to end with React Native, Next.js, Node.js and GenAI.">
+  <meta name="author" content="Abhishek Shukla">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://abhishek-shukla.vercel.app/">
 
-  gtag('config', 'G-HTDER8P9VJ');
-</script>
-    
-    
+  <!-- social previews (LinkedIn, WhatsApp, Slack, X, Discord…) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Abhishek Shukla">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://abhishek-shukla.vercel.app/">
+  <meta property="og:title" content="Abhishek Shukla — Full Stack Developer">
+  <meta property="og:description" content="Abhishek Shukla is a full stack developer in Noida, India, building mobile and web products end to end with React Native, Next.js, Node.js and GenAI.">
+  <meta property="og:image" content="https://abhishek-shukla.vercel.app/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Abhishek Shukla — full stack developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abhishek Shukla — Full Stack Developer">
+  <meta name="twitter:description" content="Abhishek Shukla is a full stack developer in Noida, India, building mobile and web products end to end with React Native, Next.js, Node.js and GenAI.">
+  <meta name="twitter:image" content="https://abhishek-shukla.vercel.app/assets/og.png">
+  <meta name="twitter:image:alt" content="Abhishek Shukla — full stack developer">
+  <meta property="profile:first_name" content="Abhishek">
+  <meta property="profile:last_name" content="Shukla">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abhishek Shukla",
+  "url": "https://abhishek-shukla.vercel.app/",
+  "image": "https://abhishek-shukla.vercel.app/assets/avatar.png",
+  "jobTitle": "Full Stack Developer",
+  "description": "Full stack developer working in React Native, Node.js and GenAI.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Noida",
+    "addressCountry": "IN"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Galgotias University"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "L.S. College"
+    }
+  ],
+  "knowsAbout": [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Next.js",
+    "Node.js",
+    "Express",
+    "PostgreSQL",
+    "MongoDB",
+    "pgvector",
+    "Generative AI"
+  ],
+  "sameAs": [
+    "https://github.com/shukla007",
+    "https://www.linkedin.com/in/abhishekshukla007/"
+  ]
+}
+  </script>
+
+  <!-- set the theme before first paint so dark mode never flashes white -->
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark')}catch(e){}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,1..1000&family=Instrument+Serif&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body oncontextmenu="return false">
+<body>
+  <a href="#main" class="sr-only skip-link">skip to content</a>
+  <!-- animated background the glass blurs and bends (js/shader.js) -->
+  <canvas class="bg-shader" id="bg-shader" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="top-blur" aria-hidden="true"></div>
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div> -->
+  <div class="page">
+    <main id="main">
 
-<!-- navbar starts -->
-<header>
-        <a href="index.html" class="logo"><i class="fa fa-code"></i> Abhishek</a>
-
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#experience">Experience</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
-
-
-<!-- hero section starts -->
-<section class="home" id="home">
-    <div id="particles-js"></div>
-
-    <div class="content">
-    <h2>Hi There,<br/> I'm Abhishek <span>Shukla</span></h2>
-    <p>i am into <span class="typing-text"></span></p>
-    <a href="#about" class="btn"><span>About Me</span>
-      <i class="fas fa-arrow-circle-down"></i>
-    </a>
-    <div class="socials">
-        <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/abhishekshukla007/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="https://github.com/shukla007" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/avi0_07" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <!-- <li><a class="telegram" aria-label="Telegram" href="https://t.me/maityAbhishek_03" target="_blank"><i class="fab fa-telegram-plane"></i></a></li> -->
-          <li><a class="instagram" aria-label="Instagram" href="https://www.instagram.com/abhishekshukla.dev"><i class="fab fa-instagram" target="_blank"></i></a></li>
-          </ul>
-      </div>
-    </div>
-<div class="image">
-    <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
-</div>
-</section>
-<!-- hero section ends -->
-
-
-<!-- about section starts -->
-<section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
-    <div class="row">
-
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
-    </div>
-    <div class="content">
-        <h3>I'm Abhishek</h3>
-        <span class="tag">First Year Student</span>
-        
-        <p>I am <b>MCA</b> student at <b>Galgotias University</b> 
-          I am very passionate about improving my coding skills & developing native applications.
-          I build Android Apps specially Native field.
-          Working for myself to improve my skills.
-          Love to build Full-Stack clones. </p>
-        
-        <div class="box-container">
-            <div class="box">
-              <p><span> age: </span> 21</p>
-              <p><span> phone : </span> +91 9905188941</p>
-            </div>
-            <div class="box">
-              <p><span> email : </span> shuklaabhishekkumar007@gmail.com</p>
-              <p><span> place : </span> Greater Noida, India - 201308</p>
-            </div>
-        </div>
-        
-        <div class="resumebtn">
-            <a href="https://www.linkedin.com/in/abhishekshukla007" class="btn"><span>LinkedIn</span>
-                <i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
-
-    </div>
-    </div>
-</section>
-<!-- about section ends -->
-
-<!-- skills section starts -->
-<section class="skills" id="skills">
-
-    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
-
-    <div class="container">
-          <div class="row" id="skillsContainer">
-
-    
-
-      </div>
-</div>
-</section>
-<!-- skills section ends -->
-
-
-<!-- my own notes section starts -->
-<section class="skills" id="skills">
-
-  <h2 class="heading"><i class="fas fa-book-open"></i> My Notes  <span>(Some imp Repo at GitHub)</span></h2>
-
-  <div class="container">
-        <div class="row" id="notesContainer">
-
-       
-
-    </div>
-</div>
-</section>
-<!-- my own notes section ends -->
-
-
-
-<!-- work project section starts -->
-<section class="work" id="work">
-
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
-
-  <div class="box-container" id="projectsContainer">
-
-
-</div>
-
-<div class="viewall">
-  <a href="projects/index.html" class="btn"><span>View All</span>
-    <i class="fas fa-arrow-right"></i>
-</a>
-</div>
-
-</section>
-<!-- work project section ends -->
-
-<!-- experience section starts -->
-<!-- <section class="experience" id="experience">
-
-  <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
-
-  <div class="timeline">
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>HackClub RAIT</h2>
-        </div>
-        <div class="desc">
-            <h3>Project Mentor | Open Source</h3>
-            <p>Jul 2022 - present</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>GirsScript Summer of Code</h2>
-        </div>
-        <div class="desc">
-            <h3>Contributor | Open Source</h3>
-            <p>Mar 2022 - May 2022</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container right">
-      <div class="content">
-        <div class="tag">
-          <h2>JGEC Winter of Code</h2>
-        </div>
-        <div class="desc">
-            <h3>Project Mentor | Open Source</h3>
-            <p>Feb 2022 - Mar 2022</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>Rubberfy</h2>
-        </div>
-        <div class="desc">
-            <h3>Mobile Application Developer | Internship</h3>
-            <p>Nov 2021 - Dec 2021</p>
-        </div>
-      </div>
-    </div>
-
-  <div class="morebtn">
-    <a href="experience/index.html" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-
-</div>
-
-</section> -->
-<!-- experience section ends -->
-
-
-<!-- education section starts -->
-<section class="education" id="education">
-
-  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
-
-    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
-
-    <div class="box-container">
-
-    <div class="box">
-        <div class="image">
-        <img draggable="false" src="https://images.shiksha.com/mediadata/images/1483960283phpWWyCEV.jpeg" alt="">
-        </div>
-        <div class="content">
-        <h3>MCA</h3>
-        <p>GAlgotias University</p>
-        <p></p>
-        <h4>2024-2026 | Pursuing</h4>
-        </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="https://lh3.googleusercontent.com/proxy/sySFHQDoWxCH8LPmjbBAuIwXSsFpOyHuo1QMl8vUP9atmL630rmD6qIUFQ3JXKvlZADjkWs_pudx3-fl1sldwILMXI7PItQ_9LRW5-5WAyzrFLEwc_3LWn1x8Q2E_QQy8R_BNp1euu0u4IwrKZ1klzr2FU0bHINkNXHvZGIBTGk89ZQUSN1OQz-ue9TvCUcxEXY" alt="">
-      </div>
-      <div class="content">
-      <h3>BCA</h3>
-      <p>L.S College, Muzaffarpur</p>
-      <p>First Class</p>
-      <h4>2021-2024 | Completed</h4>
-      </div>
-    </div>
-
-    <div class="box">
-      <div class="image">
-      <img draggable="false" src="https://images.jdmagicbox.com/v2/comp/muzaffarpur/u7/9999px621.x621.230221191531.a8u7/catalogue/l-p-sahi-college-patahi-muzaffarpur-colleges-zgzceny3uy.jpg" alt="">
-      </div>
-      <div class="content">
-      <h3>12th | PCM-CS</h3>
-      <p>L.P Shahi College | BSEB</p>
-      <p>95%ge | 99%ile | 95%ge in PCM</p>
-      <h4>2019-2021 | Completed</h4>
-      </div>
-    </div>
-
-</div>
-</section>
-<!-- education section ends -->
-
-
-<!-- footer section starts -->
-<section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3>Abhishek's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
-          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 9905188941</p>
-          <p> <i class="fas fa-envelope"></i>shuklaabhishekkumar007@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Greater Noida, India-201309</p>
-          <div class="share">
-
-              <a href="https://www.linkedin.com/in/abhishekshukla007" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
-              <a href="https://github.com/shukla007" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-              <a href="mailto:shuklaabhishekkumar007@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
-              <a href="https://twitter.com/avi0_07" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+      <!-- ---------------- intro ---------------- -->
+      <section class="wrap sec-intro">
+        <div class="profile">
+          <div class="avatar" data-avatar></div>
+          <div>
+            <h1 class="name"><span data-field="profile.name">Abhishek Shukla</span><span data-verified></span></h1>
+            <p class="role-line" data-field="profile.role"></p>
           </div>
+          <div class="theme-ctl">
+            <kbd class="glass" title="press D">D</kbd>
+            <button type="button" class="switch glass" data-glass data-glass-bezel="6" data-glass-scale="10" role="switch" aria-checked="false"
+                    aria-label="Toggle theme" data-theme-toggle><span class="knob"></span></button>
+          </div>
+        </div>
+        <div class="prose" data-intro></div>
+      </section>
+
+      <!-- ---------------- experience ---------------- -->
+      <section class="wrap sec-exp" aria-labelledby="exp-heading">
+        <h2 id="exp-heading" class="h2"># experience</h2>
+        <div class="exp-list hl-list" data-hl-pad="8" data-render="experience-compact"></div>
+      </section>
+
+      <!-- ---------------- projects ---------------- -->
+      <section class="wrap sec-projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="h2"># projects</h2>
+        <ul class="proj-list hl-list" data-render="featured-projects"></ul>
+        <p class="after-list">all of them <a class="link" href="projects.html">here</a>,
+          more on <a class="link" data-social="github" href="https://github.com/shukla007" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      </section>
+
+      <!-- ---------------- note ---------------- -->
+      <section class="wrap sec-note">
+        <a class="note" data-note data-social="email" href="mailto:shuklaabhishekkumar007@gmail.com"></a>
+      </section>
+
+      <!-- ---------------- footer ---------------- -->
+      <div class="wrap sec-footer">
+        <footer class="footer">
+          <div class="footer-row">
+            <div class="footer-meta">
+              <p data-visitors>&copy; <span data-year>2026</span> <span class="fg" data-field="profile.name">Abhishek Shukla</span></p>
+              <p><span data-field="profile.location">Noida, India</span> <span data-clock></span></p>
+            </div>
+            <span class="signature" aria-hidden="true" data-field="profile.name">Abhishek Shukla</span>
+          </div>
+        </footer>
       </div>
+
+    </main>
   </div>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/abhishekshukla007"> Abhishek Shukla</a></h1>
+  <!-- Floating liquid-glass dock: navigation, résumé and the music toggle. -->
+  <nav class="dock glass" data-glass data-glass-bezel="14" data-glass-scale="30" data-glass-blur="10" aria-label="Site">
+    <a class="dock-item" data-page="index.html" href="index.html" aria-label="home" title="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a>
+    <a class="dock-item" data-page="work.html" href="work.html" aria-label="work" title="work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></a>
+    <a class="dock-item" data-page="projects.html" href="projects.html" aria-label="projects" title="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg></a>
+    <a class="dock-item" data-page="writing.html" href="writing.html" aria-label="writing" title="writing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg></a>
+    <span class="dock-sep" aria-hidden="true"></span>
+    <a class="dock-item" data-href="profile.resume" href="assets/Abhishek_Resume-up.pdf" target="_blank" rel="noopener noreferrer" aria-label="resume (PDF)" title="resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></a>
+    <!-- Looping background music. The src comes from SITE.audio in js/data.js;
+         the button stays hidden until JS confirms there's a track to play. -->
+    <button id="bgm-toggle" class="dock-item" type="button" hidden aria-pressed="false" aria-label="Play background music">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </nav>
+  <audio id="bgm" loop preload="none"></audio>
 
-</section>
-<!-- footer section ends -->
+  <div id="toast" class="toast glass" role="status" aria-live="polite"></div>
 
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/glass.js"></script>
+  <script src="js/shader.js"></script>
 
-<!-- scroll top btn -->
-<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-<!-- scroll back to top -->
-
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-<!-- jquery cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- typed.js cdn -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- particle.js links -->
-<script src="./assets/js/particles.min.js"></script>
-<script src="./assets/js/app.js"></script>
-
-<!-- vanilla tilt.js links -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- scroll reveal anim -->
-<script src="https://unpkg.com/scrollreveal"></script>
-
-<script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
-
-<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-
-<script src="./assets/js/script.js"></script>
-
+  <!-- oneko.js — the cat that chases the cursor. Only loaded where there is a
+       cursor to chase (no point animating it on phones). Delete to remove it. -->
+  <script>
+    if (matchMedia('(pointer: fine)').matches) {
+      var s = document.createElement('script');
+      s.src = 'js/oneko.js';
+      s.dataset.cat = 'assets/oneko.gif';
+      document.body.append(s);
+    }
+  </script>
 </body>
 </html>

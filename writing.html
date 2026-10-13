@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbfbfc">
+  <title>writing — Abhishek Shukla</title>
+  <meta name="description" content="Notes by Abhishek Shukla on building mobile apps, backends and AI features.">
+  <meta name="author" content="Abhishek Shukla">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://abhishek-shukla.vercel.app/writing.html">
+
+  <!-- social previews (LinkedIn, WhatsApp, Slack, X, Discord…) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abhishek Shukla">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:url" content="https://abhishek-shukla.vercel.app/writing.html">
+  <meta property="og:title" content="writing — Abhishek Shukla">
+  <meta property="og:description" content="Notes by Abhishek Shukla on building mobile apps, backends and AI features.">
+  <meta property="og:image" content="https://abhishek-shukla.vercel.app/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Abhishek Shukla — full stack developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="writing — Abhishek Shukla">
+  <meta name="twitter:description" content="Notes by Abhishek Shukla on building mobile apps, backends and AI features.">
+  <meta name="twitter:image" content="https://abhishek-shukla.vercel.app/assets/og.png">
+  <meta name="twitter:image:alt" content="Abhishek Shukla — full stack developer">
+
+  <!-- set the theme before first paint so dark mode never flashes white -->
+  <script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark')}catch(e){}</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,1..1000&family=Instrument+Serif&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="sr-only skip-link">skip to content</a>
+  <!-- animated background the glass blurs and bends (js/shader.js) -->
+  <canvas class="bg-shader" id="bg-shader" aria-hidden="true"></canvas>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="top-blur" aria-hidden="true"></div>
+
+  <div class="page subpage">
+    <main id="main">
+
+      <!-- ---------------- back bar ---------------- -->
+      <div class="wrap subnav">
+        <div class="subnav-row glass" data-glass data-glass-bezel="10" data-glass-scale="22" data-glass-blur="6">
+          <a class="back" href="index.html">&larr; home</a>
+          <button type="button" class="icon-btn" data-copy-url aria-label="Copy page URL" title="copy url">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <header class="wrap page-head">
+        <h1 class="h2"># what I write</h1>
+        <p class="lede">Notes on building mobile apps, backends and AI features.</p>
+      </header>
+
+      <section class="wrap sub-sec" aria-labelledby="notes-heading">
+        <h2 id="notes-heading" class="h2"># field notes</h2>
+        <div class="rows" data-render="all-writing"></div>
+        <div data-render="writing-empty"></div>
+      </section>
+
+      <!-- ---------------- footer ---------------- -->
+      <div class="wrap sec-footer">
+        <footer class="footer">
+          <div class="footer-row">
+            <div class="footer-meta">
+              <p data-visitors>&copy; <span data-year>2026</span> <span class="fg" data-field="profile.name">Abhishek Shukla</span></p>
+              <p><span data-field="profile.location">Noida, India</span> <span data-clock></span></p>
+            </div>
+            <span class="signature" aria-hidden="true" data-field="profile.name">Abhishek Shukla</span>
+          </div>
+        </footer>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Floating liquid-glass dock: navigation, résumé and the music toggle. -->
+  <nav class="dock glass" data-glass data-glass-bezel="14" data-glass-scale="30" data-glass-blur="10" aria-label="Site">
+    <a class="dock-item" data-page="index.html" href="index.html" aria-label="home" title="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a>
+    <a class="dock-item" data-page="work.html" href="work.html" aria-label="work" title="work"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg></a>
+    <a class="dock-item" data-page="projects.html" href="projects.html" aria-label="projects" title="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg></a>
+    <a class="dock-item" data-page="writing.html" href="writing.html" aria-label="writing" title="writing"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.376 3.622a1 1 0 0 1 3.002 3.002L7.368 18.635a2 2 0 0 1-.855.506l-2.872.838a.5.5 0 0 1-.62-.62l.838-2.872a2 2 0 0 1 .506-.854z"/></svg></a>
+    <span class="dock-sep" aria-hidden="true"></span>
+    <a class="dock-item" data-href="profile.resume" href="assets/Abhishek_Resume-up.pdf" target="_blank" rel="noopener noreferrer" aria-label="resume (PDF)" title="resume"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></a>
+    <!-- Looping background music. The src comes from SITE.audio in js/data.js;
+         the button stays hidden until JS confirms there's a track to play. -->
+    <button id="bgm-toggle" class="dock-item" type="button" hidden aria-pressed="false" aria-label="Play background music">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </nav>
+  <audio id="bgm" loop preload="none"></audio>
+
+  <div id="toast" class="toast glass" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/glass.js"></script>
+  <script src="js/shader.js"></script>
+
+  <!-- oneko.js — the cat that chases the cursor. Only loaded where there is a
+       cursor to chase (no point animating it on phones). Delete to remove it. -->
+  <script>
+    if (matchMedia('(pointer: fine)').matches) {
+      var s = document.createElement('script');
+      s.src = 'js/oneko.js';
+      s.dataset.cat = 'assets/oneko.gif';
+      document.body.append(s);
+    }
+  </script>
+</body>
+</html>
